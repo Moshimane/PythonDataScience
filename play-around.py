@@ -123,3 +123,40 @@ DoSomething()
 
 def calculateSum(a,b):
     return a+b
+
+
+##########################################################
+#                 Dictionaries and Tuples                #
+########################################################## 
+
+d = {'joy': 10, 'master': 9}
+
+print(f'joy is {d["joy"]} years old')
+
+d['joy2'] = 30
+print(d)
+
+for key in d:
+    print(f'key: {key}, value: {d[key]}')
+  
+#print key value pairs using tuples
+for k,v in d.items():
+    print(f'key: {k}, value: {v}')
+
+del d['master']
+print(d)
+
+# check if joy exists in dictionary
+print('joy' in d)
+
+# remove everything from dictionary
+d.clear()
+print(d)
+
+#define a tuple
+point = (5,9)
+
+print(point[0])
+
+# tupleas are immutables
+# point[0] = 3 -> throws an error
