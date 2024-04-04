@@ -1,3 +1,5 @@
+import modules
+
 value = input('Enter number greater than 1')
 num = int(value)
 
@@ -26,3 +28,5 @@ num2 = int(input('Enter positive number'))
 shape = input('Enter name of shape')
 
 calculate_area(num,num2,shape)
+
+print(modules.factorial_calc(5))
