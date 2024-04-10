@@ -52,6 +52,36 @@ class Square(Shape):
         self.area = self.side * self.side
     
 triagle = Triagle(3, 4)
+square = Square(6)
 print(triagle.get_name())
 triagle.area_calc()
 print(triagle.area)
+
+class Father:
+    def eyes(self):
+        print('brown eyes')
+        
+    def skill(self):
+        print('coding')
+
+class Mother:
+    def hair(self):
+        print('blonde hair')
+        
+    def skill(self):
+        print('cleaning')
+        
+class Child(Father, Mother):
+    def personality(self):
+        print('bubbly personality')
+        
+    def skill(self):
+        Father.skill(self)
+        Mother.skill(self)
+        print('wrestling')
+        
+child = Child()
+child.personality()
+child.hair()
+child.eyes()
+child.skill()
